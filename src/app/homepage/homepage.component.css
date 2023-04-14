@@ -7,14 +7,22 @@
   transition: top 0.3s ease-in-out;
 }
 .nav1{
-  background-color: #0d333f;
+  /* background-color: #0d333f; */
   color: #fff;
   height: 210px;
   font-size: 40px;
   text-align: center;
   padding: 0 48px;
+  background-color: #0fd46c;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-image: url("https://digitalasset.intuit.com/render/content/dam/intuit/sbseg/en_row/quickbooks/web/image/other/sbseg-en_row-april_promo-get70off3months--desktop.svg");
+
 
 }
+/* .nav1 .discount{
+  background-image: url("https://digitalasset.intuit.com/render/content/dam/intuit/sbseg/en_row/quickbooks/web/image/other/sbseg-en_row-april_promo-get70off3months--desktop.svg");
+} */
 
 .nav2{
   display: flex;
@@ -42,20 +50,104 @@ nav a:hover {
   margin-top: 270px;
   margin-bottom: 0px;
 }
-
+.hero{
+  background-color: #fff;
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hero-image{
+  position: absolute;
+  display: flex;
+  
+}
+.hero-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  accent-color: aliceblue;
+  overflow: hidden;
+}
 h1 {
   margin: 0;
   font-size: 3em;
   font-weight: normal;
   color: #0070c9;
 }
-
+.hero-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 40%;
+  margin-left: 2.5rem;
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff;
+  
+}
+.hero-text p{
+  font-size: 12px;
+  font-weight: 600;
+}
+.hero-text h2{
+  font-weight: 700;
+line-height: 1.25;
+font-size: 3rem;
+}
+.hero-btn{
+display: flex;
+gap: 2rem;
+}
+.hero-btn button{
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem;
+}
+.hero-btn .green{
+  background-color: #0e8900;
+color: #fff;
+}
+.hero-btn .grey{
+  background-color: #393a3d;
+color: #fff;
+}
+.hero-btn .grey:hover{
+background-color: black;
+}
+.hero-btn .green:hover{
+  background-color: #057706;
+}
 p {
   margin: 0;
 }
 
+/* dowm-business */
+.dowm-business{
+  margin-top: 180px;
+}
+.dowm-business h2{
+  text-align: center;
+}
+.cards-buss{
+  display: flex;
+  margin:1rem 8rem;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.text{
+  margin-top: 1rem;
+}
 
+/* footer */
 footer {
+  margin-top:300px;
   background-color: #333;
   color: #fff;
   padding: 20px;
