@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class HomepageComponent implements OnInit{
  
   private interval: any;
-  private endDate: Date = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000); // Set the end date to 14 days from now
+  private endDate: Date = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000); 
 
   public days: number = 0;
   public hours: number = 0;
