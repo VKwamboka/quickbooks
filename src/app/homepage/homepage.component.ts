@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -39,6 +39,13 @@ export class HomepageComponent implements OnInit{
         clearInterval(this.interval);
       }
     }, 1000);
+  }
+
+  isScrolling = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolling = (window.pageYOffset > 0);
   }
 
 }

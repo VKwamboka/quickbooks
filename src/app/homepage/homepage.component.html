@@ -1,17 +1,28 @@
 <!-- <header> -->
   <nav>
     <div class="navbar">
-      <div class="navbar1">
-        <div class="nav1">
-          <div class="discount">
+      <div class="navbar1" [ngClass]="{ scrolling: isScrolling }">
+        <div class="nav1" [ngClass]="{ scrolling: isScrolling }">
+          <div class="discount" [ngClass]="{ scrolling: isScrolling }">
             <div class="countdown">
-              <div class="days">{{ days }}</div>
-              <div class="hours">{{ hours }}</div>
-              <div class="minutes">{{ minutes }}</div>
-              <div class="seconds">{{ seconds }}</div>
+              <div class="days">
+                {{ days }} 
+                <p style="font-size: 10px;">DAYS</p>
+              </div>
+              <div class="hours">
+                {{ hours }} 
+                <p style="font-size: 10px;">HOURS</p></div>
+              <div class="minutes">
+                {{ minutes }}
+                <p style="font-size: 10px;" >MINS</p> 
+              </div>
+              <div class="seconds">
+                {{ seconds }} 
+                <p style="font-size: 10px;">SECS</p>
+              </div>
             </div>
-  
-            <button>Buy Now</button>
+            <!-- <br> -->
+            <button class="buyNow">Buy Now</button>
           </div>
          
           
