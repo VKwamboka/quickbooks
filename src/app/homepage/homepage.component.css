@@ -306,6 +306,7 @@ transition-delay: .2s;
 .links a{
   cursor: pointer;
   font-weight: 600;
+  font-size: 1rem;
 color: #393a3d;
 }
 .links a.active{
@@ -314,6 +315,16 @@ color: #393a3d;
   text-underline-offset: 1.2rem;
   text-decoration-color: #32a323;
   text-decoration-thickness: 4px;
+}
+hr{
+  border: 1px solid #ebedef;
+
+}
+.run-business h2{
+  text-align: center;
+  color: #393a3d;
+  font-weight: 600;
+  font-size: 2.125rem;
 }
 
 /* run buiness end */
