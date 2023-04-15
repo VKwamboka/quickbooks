@@ -127,7 +127,16 @@
   </div>
   <hr>
   <div class="tab-content">
-    <div *ngIf="activeTab === 'Invoicing'">Invoicing Content Goes Here</div>
+    <div *ngIf="activeTab === 'Invoicing'" class="tabs">
+      <div class="business-text">
+        <h2>Send invoices on-the-go</h2>
+        <p>Manage your business on-the-go with the QuickBooks mobile app. Create and send custom online invoices anytime, anywhere, from any device.</p>
+      </div>
+      <div class="business-image">
+        <!-- <img src="../../assets/customize.jpg" alt=""> -->
+        <img src="../../assets/circlelady.jpg" alt="business">
+      </div>
+    </div>
     <div *ngIf="activeTab === 'Expenses'">Expenses Content Goes Here</div>
     <div *ngIf="activeTab === 'Reports'">Reports Content Goes Here</div>
   </div>
