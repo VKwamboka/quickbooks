@@ -125,7 +125,7 @@
     <a [ngClass]="{ 'active': activeTab === 'Expenses' }" (click)="activeTab = 'Expenses'">Expenses</a>
     <a [ngClass]="{ 'active': activeTab === 'Reports' }" (click)="activeTab = 'Reports'">Reports</a>
   </div>
-
+  <hr>
   <div class="tab-content">
     <div *ngIf="activeTab === 'Invoicing'">Invoicing Content Goes Here</div>
     <div *ngIf="activeTab === 'Expenses'">Expenses Content Goes Here</div>

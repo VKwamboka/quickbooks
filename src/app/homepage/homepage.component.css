@@ -291,6 +291,30 @@ transition-delay: .2s;
 /* million end */
 
 /* run business start */
+.run-business{
+  margin:4.5rem 2.5rem;
+}
+.run-business .links{
+  display: flex;
+  gap: 3rem;
+  margin-top: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+ 
+}
+.links a{
+  cursor: pointer;
+  font-weight: 600;
+color: #393a3d;
+}
+.links a.active{
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
+  text-decoration-color: #32a323;
+  text-decoration-thickness: 4px;
+}
 
 /* run buiness end */
 
