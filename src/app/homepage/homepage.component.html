@@ -117,6 +117,23 @@
 </div>
 <!-- million end -->
 
+<!-- run your business start -->
+<div class="run-business">
+  <h2>Run your business on your terms</h2>
+  <div class="links">
+    <a [ngClass]="{ 'active': activeTab === 'Invoicing' }" (click)="activeTab = 'Invoicing'">Invoicing</a>
+    <a [ngClass]="{ 'active': activeTab === 'Expenses' }" (click)="activeTab = 'Expenses'">Expenses</a>
+    <a [ngClass]="{ 'active': activeTab === 'Reports' }" (click)="activeTab = 'Reports'">Reports</a>
+  </div>
+
+  <div class="tab-content">
+    <div *ngIf="activeTab === 'Invoicing'">Invoicing Content Goes Here</div>
+    <div *ngIf="activeTab === 'Expenses'">Expenses Content Goes Here</div>
+    <div *ngIf="activeTab === 'Reports'">Reports Content Goes Here</div>
+  </div>
+</div>
+<!-- run your business end -->
+
   <!-- footer -->
   <footer>
     <nav>

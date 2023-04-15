@@ -40,12 +40,15 @@ export class HomepageComponent implements OnInit{
       }
     }, 1000);
   }
-
+// scrolling navbar
   isScrolling = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolling = (window.pageYOffset > 0);
   }
+
+  // business tabs
+  activeTab: string = 'Invoicing';
 
 }

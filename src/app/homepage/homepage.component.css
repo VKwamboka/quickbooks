@@ -131,12 +131,12 @@ nav a:hover {
   accent-color: aliceblue;
   overflow: hidden;
 }
-h1 {
+/* h1 {
   margin: 0;
   font-size: 3em;
   font-weight: normal;
   color: #0070c9;
-}
+} */
 .hero-content {
   position: relative;
   display: flex;
@@ -164,11 +164,17 @@ h1 {
   display: flex;
   gap: 2rem;
 }
-.hero-btn button {
+.hero-btn,.btn-million button {
   border-radius: 2rem;
   border: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 14rem;
+  transition: background-color 0.3s ease-out;
 }
+
 .hero-btn .green {
   background-color: #0e8900;
   color: #fff;
@@ -212,6 +218,11 @@ p {
   margin-top: 100px;
   background: linear-gradient(to right, #48b819, #08c0ac);
   height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   /* position: relative; */
 }
 .million-text {
@@ -221,12 +232,23 @@ p {
   color: #fff;
   font-size: 2.125rem;
 }
+.btn-million{
+  display: flex;
+  gap: 1.5rem;
+}
+.btn-million .grey{
+background-color: #393a3d;
+color: #fff;
+}
+.btn-million .grey:hover{
+  background-color: black;
+ 
+}
 .beam-container {
   position: absolute;
-right: 33rem;
-/* bottom: -3.75rem; */
-transform: scale(1);
-mix-blend-mode: multiply;
+  right: 33rem;
+  transform: scale(1);
+  mix-blend-mode: multiply;
 }
 
 .beam {
@@ -266,28 +288,11 @@ border-top-right-radius: 0;
 border-top-left-radius: 0;
 transition-delay: .2s;
 }
-/* 
-.beam:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.beam:nth-child(3) {
-  animation-delay: 1s;
-}
-
-@keyframes beam-anim {
-  0% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(3);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-} */
-
 /* million end */
+
+/* run business start */
+
+/* run buiness end */
 
 /* footer */
 footer {
