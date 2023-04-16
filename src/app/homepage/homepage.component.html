@@ -161,6 +161,28 @@
 </div>
 <!-- run your business end -->
 
+<!-- plan start -->
+<div class="plan">
+  <div class="plan-text">
+    <h2>Choose a plan that works for your business</h2>
+  </div>
+  <div class="payment-plan">
+    <a [ngClass]="{ 'active': activeTab === 'Monthly' }" (click)="activeTab = 'Monthly'">Monthly</a>
+    <a [ngClass]="{ 'active': activeTab === 'Annual' }" (click)="activeTab = 'Annual'">Annual</a>
+
+  </div>
+  <!-- monthly -->
+  <div class="monthly">
+    <div class="plan-cards">
+      <h3>Simple Start </h3>
+      <p>Start your business</p>
+      <span>US$17</span>
+    </div>
+  </div>
+
+</div>
+<!-- plan finish -->
+
   <!-- footer -->
   <footer>
     <nav>

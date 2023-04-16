@@ -320,7 +320,7 @@ hr{
   border: 1px solid #ebedef;
 
 }
-.run-business h2{
+.run-business,.plan-text h2{
   text-align: center;
   color: #393a3d;
   font-weight: 600;
@@ -352,6 +352,13 @@ hr{
   width: 50%;
 }
 /* run buiness end */
+
+/* plan start */
+.plan{
+  background-color: #f4f5f8;
+}
+/* plan end */
+
 
 /* footer */
 footer {
