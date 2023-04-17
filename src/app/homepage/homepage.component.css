@@ -356,6 +356,23 @@ hr{
 /* plan start */
 .plan{
   background-color: #f4f5f8;
+  
+}
+.pricing{
+  max-width: 73.75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.plan-cards{
+  /* width: 30%; */
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+}
+.monthly{
+  display:flex;
 }
 /* plan end */
 

@@ -163,22 +163,43 @@
 
 <!-- plan start -->
 <div class="plan">
-  <div class="plan-text">
-    <h2>Choose a plan that works for your business</h2>
-  </div>
-  <div class="payment-plan">
-    <a [ngClass]="{ 'active': activeTab === 'Monthly' }" (click)="activeTab = 'Monthly'">Monthly</a>
-    <a [ngClass]="{ 'active': activeTab === 'Annual' }" (click)="activeTab = 'Annual'">Annual</a>
-
-  </div>
-  <!-- monthly -->
-  <div class="monthly">
-    <div class="plan-cards">
-      <h3>Simple Start </h3>
-      <p>Start your business</p>
-      <span>US$17</span>
+  <div class="pricing">
+    <div class="plan-text">
+      <h2>Choose a plan that works for your business</h2>
+    </div>
+    <div class="payment-plan">
+      <a [ngClass]="{ 'active': activeTab === 'Monthly' }" (click)="activeTab = 'Monthly'">Monthly</a>
+      <a [ngClass]="{ 'active': activeTab === 'Annual' }" (click)="activeTab = 'Annual'">Annual</a>
+  
+    </div>
+    <!-- monthly -->
+    <div class="monthly">
+      <div class="plan-cards">
+        <h3>Simple Start </h3>
+        <p>Start your business</p>
+        <span>US$17</span>
+        <span>US$5</span>
+        <P>Save 70% for 3 months</P>
+        <div class="pay-btn">
+          <button class="green">Buy now</button>
+          <button class="white">Start a 30-day free trial</button>
+        </div>
+        <ul>
+          <li>Track income & expenses</li>
+          <li>Send custom invoices & quotes</li>
+          <li>Connect your bank</li>
+          <li>Track GST and VAT</li>
+          <li>Insights & reports</li>
+          <li>Capture & organise receipts</li>
+          <li>Progress invoicing</li>
+          <li>For one user, plus your accountant</li>
+        </ul>
+        
+  
+      </div>
     </div>
   </div>
+ 
 
 </div>
 <!-- plan finish -->
