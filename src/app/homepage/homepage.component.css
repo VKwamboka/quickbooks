@@ -368,9 +368,11 @@ hr{
 .plan-cards{
   width: 33%;
   height: 60rem;
-  padding: 1rem;
+  padding: 0 1.25rem;
   background-color: #fff;
   color: #000;
+  border-radius: .25rem;
+  box-shadow: 0 .125rem .5rem 0 rgba(0, 0, 0, .2);
 }
 .plan-cards h3{
   font-size: 1.5rem;
@@ -399,6 +401,18 @@ text-align: left;
   align-items: center;
   gap: 2rem;
   margin:2rem;
+}
+.plan-text h2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.payment-plan{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 /* plan end */
 
