@@ -359,20 +359,33 @@ hr{
   
 }
 .pricing{
-  max-width: 73.75rem;
+  /* max-width: 90.75rem; */
   margin: 0 auto;
   padding: 1.25rem;
   position: relative;
   overflow: hidden;
 }
 .plan-cards{
-  /* width: 30%; */
+  /* width: 28%; */
   height: 100vh;
   background-color: #fff;
   color: #000;
 }
+.plan-cards li{
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  padding-left: .5rem;
+  list-style: none;
+padding-right: .625rem;
+position: relative;
+text-align: left;
+}
 .monthly{
   display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin:2rem;
 }
 /* plan end */
 

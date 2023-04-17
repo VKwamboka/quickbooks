@@ -169,6 +169,7 @@
     </div>
     <div class="payment-plan">
       <a [ngClass]="{ 'active': activeTab === 'Monthly' }" (click)="activeTab = 'Monthly'">Monthly</a>
+      <i class="fa-solid fa-toggle-on"></i>
       <a [ngClass]="{ 'active': activeTab === 'Annual' }" (click)="activeTab = 'Annual'">Annual</a>
   
     </div>
@@ -196,6 +197,66 @@
         </ul>
         
   
+      </div>
+<!-- Essentials  -->
+      <div class="plan-cards">
+        <h3>Essentials  </h3>
+        <p>Run your business</p>
+        <span>US$26</span>
+        <span>US$7</span>
+        <P>Save 70% for 3 months</P>
+        <div class="pay-btn">
+          <button class="green">Buy now</button>
+          <button class="white">Start a 30-day free trial</button>
+        </div>
+        <ul>
+          <li>Track income & expenses</li>
+          <li>Send custom invoices & quotes</li>
+          <li>Connect your bank</li>
+          <li>Track GST and VAT</li>
+          <li>Insights & reports</li>
+          <li>Capture & organise receipts</li>
+          <li>Progress invoicing</li>
+          <div class="premium">
+            <li>Manage bills & payments</li>
+            <li>Track employee time</li>
+            <li>Multi-currency</li>
+            <li>For three user, plus your accountant</li>
+          </div>
+        </ul>
+        
+  
+      </div>
+      <!-- plus -->
+      <div class="plan-cards">
+        <h3>Plus </h3>
+        <p>Grow your business</p>
+        <span>US$36</span>
+        <span>US$10</span>
+        <P>Save 70% for 3 months</P>
+        <div class="pay-btn">
+          <button class="green">Buy now</button>
+          <button class="white">Start a 30-day free trial</button>
+        </div>
+        <ul>
+          <li>Track income & expenses</li>
+          <li>Send custom invoices & quotes</li>
+          <li>Connect your bank</li>
+          <li>Track GST and VAT</li>
+          <li>Insights & reports</li>
+          <li>Capture & organise receipts</li>
+          <li>Progress invoicing</li>
+          <li>Manage bills & payments</li>
+          <li>Track employee time</li>
+          <li>Multi-currency</li>
+          <div class="premium">
+            <li>Recurring transactions and bills</li>
+            <li>Track inventory</li>
+            <li>Track project profitability</li>
+            <li>Manage budgets</li>
+            <li>For five users, plus your accountant</li>
+          </div>
+        </ul>
       </div>
     </div>
   </div>
