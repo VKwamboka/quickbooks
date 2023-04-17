@@ -360,16 +360,30 @@ hr{
 }
 .pricing{
   /* max-width: 90.75rem; */
-  margin: 0 auto;
+  margin: 0 4rem;
   padding: 1.25rem;
   position: relative;
   overflow: hidden;
 }
 .plan-cards{
-  /* width: 28%; */
-  height: 100vh;
+  width: 33%;
+  height: 60rem;
+  padding: 1rem;
   background-color: #fff;
   color: #000;
+}
+.plan-cards h3{
+  font-size: 1.5rem;
+font-weight: 600;
+margin: 2.5rem 0 0;
+text-align: center;
+}
+.plan-cards .title{
+  text-align: center;
+  margin-bottom: 1.25rem;
+font-size: 1rem;
+font-weight: 400;
+color: #393a3d;
 }
 .plan-cards li{
   cursor: pointer;
@@ -380,11 +394,10 @@ padding-right: .625rem;
 position: relative;
 text-align: left;
 }
-.monthly{
+.monthly, .annual{
   display:flex;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 3rem;
+  gap: 2rem;
   margin:2rem;
 }
 /* plan end */
