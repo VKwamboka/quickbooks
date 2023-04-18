@@ -272,7 +272,7 @@ color: #fff;
 }
 #beam1{
   left: -9.625rem;
-  top: 8.4rem;
+  top: 6rem;
   width: 26rem;
   transition-delay: .3s;
   overflow: hidden;
@@ -280,7 +280,7 @@ color: #fff;
 #beam2{
   background: linear-gradient(225.74deg,#b9bdc4,#d3d6db);
   left: -4.14rem; 
-  top:4.5rem;
+  top: 1.5rem;
   height: 8.0625rem;
   overflow: hidden;
 }
@@ -288,7 +288,7 @@ color: #fff;
   height: 4.0625rem;
   width: 26rem;
 left: 2.9375rem;
-top: 11.2rem;
+top: 9rem;
 background-color: #eceef1;
 border-top-right-radius: 0;
 border-top-left-radius: 0;
@@ -503,21 +503,47 @@ padding: 0 0 1.25rem;
 
 /* plan end */
 
-/* what quickbooks cando start */
-#cando{
-  /* margin-top: 4rem; */
-}
-/* what quickbooks can do end */
-
 
 /* footer */
 footer {
-  
+  padding: 1rem;
   background-color: #333;
   color: #fff;
   padding: 20px;
 }
-
+.intuit{
+  width: 25%;
+  padding: 2rem;
+}
+.logo{
+  display: flex;
+}
+.logos{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.copy{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.copyright{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
+  margin-left: 25%;
+}
+.legal{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 footer ul {
   list-style: none;
   margin: 0;
@@ -532,7 +558,8 @@ footer li {
 
 footer a {
   color: #fff;
-  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;;
 }
 
 footer a:hover {

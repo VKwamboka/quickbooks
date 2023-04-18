@@ -1,70 +1,77 @@
 <!-- <header> -->
-  <nav>
-    <div class="navbar" >
-      <div class="navbar1" [ngClass]="{ scrolling: isScrolling }">
-        <div class="nav1" [ngClass]="{ scrolling: isScrolling }">
-          <div class="discount" [ngClass]="{ scrolling: isScrolling }">
-            <div class="countdown">
-              <div class="days">
-                {{ days }} 
-                <p style="font-size: 10px;">DAYS</p>
-              </div>
-              <div class="hours">
-                {{ hours }} 
-                <p style="font-size: 10px;">HOURS</p></div>
-              <div class="minutes">
-                {{ minutes }}
-                <p style="font-size: 10px;" >MINS</p> 
-              </div>
-              <div class="seconds">
-                {{ seconds }} 
-                <p style="font-size: 10px;">SECS</p>
-              </div>
+<nav>
+  <div class="navbar">
+    <div class="navbar1" [ngClass]="{ scrolling: isScrolling }">
+      <div class="nav1" [ngClass]="{ scrolling: isScrolling }">
+        <div class="discount" [ngClass]="{ scrolling: isScrolling }">
+          <div class="countdown">
+            <div class="days">
+              {{ days }}
+              <p style="font-size: 10px">DAYS</p>
             </div>
-            <!-- <br> -->
-            <button class="buyNow">Buy Now</button>
+            <div class="hours">
+              {{ hours }}
+              <p style="font-size: 10px">HOURS</p>
+            </div>
+            <div class="minutes">
+              {{ minutes }}
+              <p style="font-size: 10px">MINS</p>
+            </div>
+            <div class="seconds">
+              {{ seconds }}
+              <p style="font-size: 10px">SECS</p>
+            </div>
           </div>
-         
-          
+          <!-- <br> -->
+          <button class="buyNow">Buy Now</button>
         </div>
       </div>
-      
-      <div class="nav2">
-        <svg>
-          <path d="M11.6897 23.1956c6.1761 0 11.1829-5.0264 11.1829-11.2267 0-6.20036-5.0068-11.226712-11.1829-11.226712C5.51357.742188.506836 5.76854.506836 11.9689c0 6.2003 5.006734 11.2267 11.182864 11.2267Z" fill="#2CA01C"></path><path d="M7.96024 7.60291c-2.40308 0-4.34891 1.95594-4.34891 4.36589 0 2.4125 1.94583 4.366 4.34891 4.366h.62127v-1.6217h-.62127c-1.50845 0-2.73359-1.2299-2.73359-2.7443 0-1.5143 1.22514-2.74426 2.73359-2.74426h1.49353v8.48236c0 .8957.72313 1.6217 1.61533 1.6217V7.60291H7.96024ZM15.4174 16.3349c2.4031 0 4.3489-1.9559 4.3489-4.3659 0-2.41252-1.9458-4.36596-4.3489-4.36596h-.6212v1.62163h.6212c1.5085 0 2.7336 1.22993 2.7336 2.74433 0 1.5143-1.2251 2.7443-2.7336 2.7443h-1.4935V6.23089c0-.89564-.7232-1.62164-1.6153-1.62164V16.3349h3.1088Z" fill="#fff"></path><path d="M39.9498 6.81215c0 1.26238 1.0065 2.18546 2.2838 2.18546 1.2774 0 2.2863-.92058 2.2863-2.18546v-2.8965h-1.2376v2.74927c0 .68109-.4522 1.13764-1.0512 1.13764-.5964 0-1.0511-.45655-1.0511-1.13764V3.91565h-1.2376l.0074 2.8965ZM47.8301 5.07565h1.4761v3.81708h1.2376V5.07565h1.4761V3.91309h-4.1898v1.16256ZM47.0305 3.91309H45.793v4.97964h1.2375V3.91309ZM34.9498 5.07565h1.476v3.81708h1.2376V5.07565h1.4761V3.91309h-4.1922v1.16256h.0025ZM28.4573 3.91309h-1.2376v4.97964h1.2376V3.91309ZM34.2991 5.9988c0-1.26238-1.0064-2.18545-2.2863-2.18545-1.2773 0-2.2862.92058-2.2862 2.18545v2.89649h1.2375V6.14603c0-.68108.4548-1.13764 1.0512-1.13764.5964 0 1.0512.45656 1.0512 1.13764v2.74926h1.2376l-.005-2.89649ZM80.4441 11.4001c-1.2152 0-2.1073.5338-2.9522 1.3272h-.0498V6.35303h-2.654V21.3244h2.5397v-1.3646h.0398c.5989.9854 1.7868 1.6366 3.0219 1.6366 2.741 0 4.8185-2.1605 4.8185-5.1369-.0025-2.9314-2.0551-5.0594-4.7639-5.0594Zm-.5218 2.2378c1.7172 0 2.572 1.462 2.572 2.8216 0 1.4221-.9319 2.8591-2.572 2.8591-1.6004 0-2.5572-1.4345-2.5572-2.8216 0-1.3747.9766-2.8591 2.5572-2.8591ZM59.2441 13.6779c.6884 0 1.5581.3468 1.8986.8333l1.7122-1.7115c-.8275-.8756-2.1496-1.3996-3.6108-1.3996-2.9747 0-5.1367 2.1431-5.1367 5.097 0 3.0012 2.1347 5.0969 5.1938 5.0969 1.4563 0 2.8007-.4266 3.596-1.2873l-1.665-1.7938c-.3852.469-1.1904.8033-1.9136.8033-1.6153 0-2.4304-1.4495-2.4304-2.8516.0025-1.3996.8847-2.7867 2.3559-2.7867ZM119.81 11.672h-3.422l-3.429 4.0042h-.057V6.35303h-2.657V21.322h2.657v-4.7602h.057l3.556 4.7602h3.494l-4.133-5.2741 3.934-4.3759ZM73.7897 11.672h-3.4245l-3.4269 4.0042h-.0596V6.35303h-2.6541V21.322h2.6541v-4.7602h.0596l3.5562 4.7602h3.494l-4.1327-5.2741 3.9339-4.3759ZM33.7292 16.4971c0 1.3871-.9568 2.8216-2.5572 2.8216-1.6426 0-2.5745-1.4395-2.5745-2.8591 0-1.3596.8573-2.8216 2.5745-2.8216 1.5781 0 2.5572 1.4844 2.5572 2.8591Zm-7.8728-.0375c0 2.9764 1.926 5.1369 4.6646 5.1369 1.245 0 2.413-.6611 3.0914-1.432h.0397v5.9127h2.6542V11.6721h-2.5572v1.2249h-.0596c-.3753-.4166-1.3917-1.4969-3.0418-1.4969-2.7063 0-4.7913 2.1281-4.7913 5.0595ZM44.9247 16.9635c0 1.1352-.7355 2.3551-2.1098 2.3551-1.0586 0-1.6227-.7584-1.6227-2.3152V11.672h-2.6541v5.9901c0 1.9933.9915 3.9343 3.6406 3.9343 1.25 0 2.2962-.988 2.8231-1.7164h.0397v1.4445h2.5398V11.672h-2.6541v5.2915h-.0025ZM52.405 11.672h-2.654v9.6525h2.654V11.672ZM91.6395 11.4001c-3.0219 0-5.2137 2.1281-5.2137 5.0595 0 3.0337 2.2415 5.1618 5.2137 5.1618 2.9721 0 5.2137-2.1505 5.2137-5.1618 0-2.9314-2.1919-5.0595-5.2137-5.0595Zm0 7.9186c-1.7321 0-2.5199-1.4819-2.5199-2.8591 0-1.3596.7878-2.8216 2.5199-2.8216s2.5199 1.462 2.5199 2.8216c0 1.3772-.7878 2.8591-2.5199 2.8591ZM103.307 11.4001c-3.021 0-5.2132 2.1281-5.2132 5.0595 0 3.0337 2.2412 5.1618 5.2132 5.1618 2.973 0 5.214-2.1505 5.214-5.1618-.002-2.9314-2.194-5.0595-5.214-5.0595Zm0 7.9186c-1.732 0-2.519-1.4819-2.519-2.8591 0-1.3596.787-2.8216 2.519-2.8216 1.733 0 2.52 1.462 2.52 2.8216-.002 1.3772-.79 2.8591-2.52 2.8591ZM124.385 13.3885c.825 0 1.755.494 2.105.963l1.566-1.5069c-.723-.9131-2.147-1.4445-3.651-1.4445-1.921 0-3.939.9705-3.939 3.1385 0 1.8612 1.454 2.4225 2.876 2.7643 1.498.3493 2.032.6062 2.032 1.2125 0 .8931-1.009 1.0378-1.356 1.0378-.868 0-1.874-.4989-2.418-1.1451l-1.611 1.6391c.88.9805 2.388 1.5692 3.934 1.5692 2.595 0 4.135-1.2424 4.135-3.2906 0-1.961-1.883-2.6196-3.225-2.9439-1.367-.3268-1.847-.504-1.847-1.0578-.005-.7659.962-.9356 1.399-.9356ZM130.867 20.1013c0-.2677-.227-.3653-.46-.3653h-.437v1.2457h.224v-.5209h.159l.291.5207h.271l-.334-.5454c.174-.0389.286-.1557.286-.3356v.0008Zm-.673.1796v-.355h.203c.116 0 .247.0339.247.1701 0 .1507-.145.1847-.271.1847h-.179v.0002Zm.208-1.0216c-.145-.0006-.289.0275-.423.0828-.134.0552-.256.1365-.358.2391-.103.1026-.184.2246-.24.3589-.055.1342-.084.2782-.084.4236 0 .613.494 1.0948 1.105 1.0948.61 0 1.105-.4815 1.105-1.0948-.001-.1454-.029-.2894-.085-.4237-.055-.1343-.137-.2563-.239-.3589-.103-.1026-.225-.1839-.359-.2391-.134-.0552-.277-.0833-.422-.0827Zm0 2.0383c-.247-.001-.483-.0996-.657-.2745-.174-.175-.273-.4119-.274-.6594.007-.2431.108-.474.282-.6436.174-.1696.406-.2645.649-.2645.242 0 .475.0949.649.2645.173.1696.274.4005.281.6436-.001.2475-.099.4846-.274.6596-.174.175-.41.2734-.656.2743Z" fill="#000"></path>
-        </svg>
-        <a href="#">Sign In</a>
-      </div>
     </div>
-     
-  </nav>
 
-   <!-- hero begin -->
+    <div class="nav2">
+      <svg>
+        <path
+          d="M11.6897 23.1956c6.1761 0 11.1829-5.0264 11.1829-11.2267 0-6.20036-5.0068-11.226712-11.1829-11.226712C5.51357.742188.506836 5.76854.506836 11.9689c0 6.2003 5.006734 11.2267 11.182864 11.2267Z"
+          fill="#2CA01C"
+        ></path>
+        <path
+          d="M7.96024 7.60291c-2.40308 0-4.34891 1.95594-4.34891 4.36589 0 2.4125 1.94583 4.366 4.34891 4.366h.62127v-1.6217h-.62127c-1.50845 0-2.73359-1.2299-2.73359-2.7443 0-1.5143 1.22514-2.74426 2.73359-2.74426h1.49353v8.48236c0 .8957.72313 1.6217 1.61533 1.6217V7.60291H7.96024ZM15.4174 16.3349c2.4031 0 4.3489-1.9559 4.3489-4.3659 0-2.41252-1.9458-4.36596-4.3489-4.36596h-.6212v1.62163h.6212c1.5085 0 2.7336 1.22993 2.7336 2.74433 0 1.5143-1.2251 2.7443-2.7336 2.7443h-1.4935V6.23089c0-.89564-.7232-1.62164-1.6153-1.62164V16.3349h3.1088Z"
+          fill="#fff"
+        ></path>
+        <path
+          d="M39.9498 6.81215c0 1.26238 1.0065 2.18546 2.2838 2.18546 1.2774 0 2.2863-.92058 2.2863-2.18546v-2.8965h-1.2376v2.74927c0 .68109-.4522 1.13764-1.0512 1.13764-.5964 0-1.0511-.45655-1.0511-1.13764V3.91565h-1.2376l.0074 2.8965ZM47.8301 5.07565h1.4761v3.81708h1.2376V5.07565h1.4761V3.91309h-4.1898v1.16256ZM47.0305 3.91309H45.793v4.97964h1.2375V3.91309ZM34.9498 5.07565h1.476v3.81708h1.2376V5.07565h1.4761V3.91309h-4.1922v1.16256h.0025ZM28.4573 3.91309h-1.2376v4.97964h1.2376V3.91309ZM34.2991 5.9988c0-1.26238-1.0064-2.18545-2.2863-2.18545-1.2773 0-2.2862.92058-2.2862 2.18545v2.89649h1.2375V6.14603c0-.68108.4548-1.13764 1.0512-1.13764.5964 0 1.0512.45656 1.0512 1.13764v2.74926h1.2376l-.005-2.89649ZM80.4441 11.4001c-1.2152 0-2.1073.5338-2.9522 1.3272h-.0498V6.35303h-2.654V21.3244h2.5397v-1.3646h.0398c.5989.9854 1.7868 1.6366 3.0219 1.6366 2.741 0 4.8185-2.1605 4.8185-5.1369-.0025-2.9314-2.0551-5.0594-4.7639-5.0594Zm-.5218 2.2378c1.7172 0 2.572 1.462 2.572 2.8216 0 1.4221-.9319 2.8591-2.572 2.8591-1.6004 0-2.5572-1.4345-2.5572-2.8216 0-1.3747.9766-2.8591 2.5572-2.8591ZM59.2441 13.6779c.6884 0 1.5581.3468 1.8986.8333l1.7122-1.7115c-.8275-.8756-2.1496-1.3996-3.6108-1.3996-2.9747 0-5.1367 2.1431-5.1367 5.097 0 3.0012 2.1347 5.0969 5.1938 5.0969 1.4563 0 2.8007-.4266 3.596-1.2873l-1.665-1.7938c-.3852.469-1.1904.8033-1.9136.8033-1.6153 0-2.4304-1.4495-2.4304-2.8516.0025-1.3996.8847-2.7867 2.3559-2.7867ZM119.81 11.672h-3.422l-3.429 4.0042h-.057V6.35303h-2.657V21.322h2.657v-4.7602h.057l3.556 4.7602h3.494l-4.133-5.2741 3.934-4.3759ZM73.7897 11.672h-3.4245l-3.4269 4.0042h-.0596V6.35303h-2.6541V21.322h2.6541v-4.7602h.0596l3.5562 4.7602h3.494l-4.1327-5.2741 3.9339-4.3759ZM33.7292 16.4971c0 1.3871-.9568 2.8216-2.5572 2.8216-1.6426 0-2.5745-1.4395-2.5745-2.8591 0-1.3596.8573-2.8216 2.5745-2.8216 1.5781 0 2.5572 1.4844 2.5572 2.8591Zm-7.8728-.0375c0 2.9764 1.926 5.1369 4.6646 5.1369 1.245 0 2.413-.6611 3.0914-1.432h.0397v5.9127h2.6542V11.6721h-2.5572v1.2249h-.0596c-.3753-.4166-1.3917-1.4969-3.0418-1.4969-2.7063 0-4.7913 2.1281-4.7913 5.0595ZM44.9247 16.9635c0 1.1352-.7355 2.3551-2.1098 2.3551-1.0586 0-1.6227-.7584-1.6227-2.3152V11.672h-2.6541v5.9901c0 1.9933.9915 3.9343 3.6406 3.9343 1.25 0 2.2962-.988 2.8231-1.7164h.0397v1.4445h2.5398V11.672h-2.6541v5.2915h-.0025ZM52.405 11.672h-2.654v9.6525h2.654V11.672ZM91.6395 11.4001c-3.0219 0-5.2137 2.1281-5.2137 5.0595 0 3.0337 2.2415 5.1618 5.2137 5.1618 2.9721 0 5.2137-2.1505 5.2137-5.1618 0-2.9314-2.1919-5.0595-5.2137-5.0595Zm0 7.9186c-1.7321 0-2.5199-1.4819-2.5199-2.8591 0-1.3596.7878-2.8216 2.5199-2.8216s2.5199 1.462 2.5199 2.8216c0 1.3772-.7878 2.8591-2.5199 2.8591ZM103.307 11.4001c-3.021 0-5.2132 2.1281-5.2132 5.0595 0 3.0337 2.2412 5.1618 5.2132 5.1618 2.973 0 5.214-2.1505 5.214-5.1618-.002-2.9314-2.194-5.0595-5.214-5.0595Zm0 7.9186c-1.732 0-2.519-1.4819-2.519-2.8591 0-1.3596.787-2.8216 2.519-2.8216 1.733 0 2.52 1.462 2.52 2.8216-.002 1.3772-.79 2.8591-2.52 2.8591ZM124.385 13.3885c.825 0 1.755.494 2.105.963l1.566-1.5069c-.723-.9131-2.147-1.4445-3.651-1.4445-1.921 0-3.939.9705-3.939 3.1385 0 1.8612 1.454 2.4225 2.876 2.7643 1.498.3493 2.032.6062 2.032 1.2125 0 .8931-1.009 1.0378-1.356 1.0378-.868 0-1.874-.4989-2.418-1.1451l-1.611 1.6391c.88.9805 2.388 1.5692 3.934 1.5692 2.595 0 4.135-1.2424 4.135-3.2906 0-1.961-1.883-2.6196-3.225-2.9439-1.367-.3268-1.847-.504-1.847-1.0578-.005-.7659.962-.9356 1.399-.9356ZM130.867 20.1013c0-.2677-.227-.3653-.46-.3653h-.437v1.2457h.224v-.5209h.159l.291.5207h.271l-.334-.5454c.174-.0389.286-.1557.286-.3356v.0008Zm-.673.1796v-.355h.203c.116 0 .247.0339.247.1701 0 .1507-.145.1847-.271.1847h-.179v.0002Zm.208-1.0216c-.145-.0006-.289.0275-.423.0828-.134.0552-.256.1365-.358.2391-.103.1026-.184.2246-.24.3589-.055.1342-.084.2782-.084.4236 0 .613.494 1.0948 1.105 1.0948.61 0 1.105-.4815 1.105-1.0948-.001-.1454-.029-.2894-.085-.4237-.055-.1343-.137-.2563-.239-.3589-.103-.1026-.225-.1839-.359-.2391-.134-.0552-.277-.0833-.422-.0827Zm0 2.0383c-.247-.001-.483-.0996-.657-.2745-.174-.175-.273-.4119-.274-.6594.007-.2431.108-.474.282-.6436.174-.1696.406-.2645.649-.2645.242 0 .475.0949.649.2645.173.1696.274.4005.281.6436-.001.2475-.099.4846-.274.6596-.174.175-.41.2734-.656.2743Z"
+          fill="#000"
+        ></path>
+      </svg>
+      <a href="#">Sign In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- hero begin -->
 <div class="content">
- 
   <div class="hero">
     <div class="hero-image">
-      <img src="../../assets/hero.jpg">
+      <img src="../../assets/hero.jpg" />
     </div>
     <div class="hero-content">
-     
       <div class="hero-text">
         <p>ACCOUNTING SOFTWARE FOR SMALL BUSINESS</p>
         <h2>Serioulsy easy accounting for small businesses</h2>
-        <p>Track expenses, customise invoices, run reports and more all in one place.</p>
+        <p>
+          Track expenses, customise invoices, run reports and more all in one
+          place.
+        </p>
       </div>
-     
 
       <div class="hero-btn">
         <button class="green">Buy now & save 70%</button>
         <button class="grey">Start a 30-day free trial</button>
       </div>
-    
     </div>
-
   </div>
   <!-- hero end -->
-  
+
   <!-- down to business start-->
   <div class="dowm-business">
     <h2>Let's get down to business</h2>
@@ -73,268 +80,352 @@
         <img src="../../assets/access.svg" alt="access" />
         <div class="text">
           <h6>Access anytime, on any device</h6>
-          <p>Your data is stored in the cloud, allowing you to run your business from your Mac, PC, tablet or phone.</p>
+          <p>
+            Your data is stored in the cloud, allowing you to run your business
+            from your Mac, PC, tablet or phone.
+          </p>
         </div>
       </div>
       <div class="card">
         <img src="../../assets/track.svg" alt="track" />
         <div class="text">
           <h6>Easily track your cash flow</h6>
-          <p>Send custom quotes and invoices to get paid faster. Then track your sales and expenses and sort receipts in one place. </p>
+          <p>
+            Send custom quotes and invoices to get paid faster. Then track your
+            sales and expenses and sort receipts in one place.
+          </p>
         </div>
-        
       </div>
-  
+
       <div class="card">
         <img src="../../assets/better.svg" alt="better" />
         <div class="text">
           <h6>Build better business insights</h6>
-          <p>Create reports and collaborate with your advisor to see how your business is doing and get ready for tax time.</p>
+          <p>
+            Create reports and collaborate with your advisor to see how your
+            business is doing and get ready for tax time.
+          </p>
         </div>
-        
       </div>
     </div>
-    
   </div>
   <!-- down to business end -->
 
-<!-- million start -->
-<div class="million">
-  <div class="million-text">
-    Over 3.4 million small businesses use QuickBooks Online
-  </div>
-  <div class="btn-million">
-    <button class="grey">Buy now & save 70%</button>
-    <button class="white">Start a 30-day free trial</button>
-  </div>
+  <!-- million start -->
+  <div class="million">
+    <div class="million-text">
+      Over 3.4 million small businesses use QuickBooks Online
+    </div>
+    <div class="btn-million">
+      <button class="grey">Buy now & save 70%</button>
+      <button class="white">Start a 30-day free trial</button>
+    </div>
 
-  <div class="beam-container">
-    <div class="beam" id="beam1"></div>
-    <div class="beam" id="beam2"></div>
-    <div class="beam " id="beam3"></div>
+    <div class="beam-container">
+      <div class="beam" id="beam1"></div>
+      <div class="beam" id="beam2"></div>
+      <div class="beam" id="beam3"></div>
+    </div>
   </div>
-  
-</div>
-<!-- million end -->
+  <!-- million end -->
 
-<!-- run your business start -->
-<div class="run-business">
-  <h2>Run your business on your terms</h2>
-  <div class="links">
-    <a [ngClass]="{ 'active': activeTab === 'Invoicing' }" (click)="activeTab = 'Invoicing'">Invoicing</a>
-    <a [ngClass]="{ 'active': activeTab === 'Expenses' }" (click)="activeTab = 'Expenses'">Expenses</a>
-    <a [ngClass]="{ 'active': activeTab === 'Reports' }" (click)="activeTab = 'Reports'">Reports</a>
-  </div>
-  <hr>
-  <div class="tab-content">
-    <!-- invoicing -->
-    <div *ngIf="activeTab === 'Invoicing'" class="tabs">
-      <div class="business-text">
-        <h2>Send invoices on-the-go</h2>
-        <p>Manage your business on-the-go with the QuickBooks mobile app. Create and send custom online invoices anytime, anywhere, from any device.</p>
-      </div>
-      <div class="business-image">
-        <img src="../../assets/circlelady.jpg" alt="business">
-      </div>
+  <!-- run your business start -->
+  <div class="run-business">
+    <h2>Run your business on your terms</h2>
+    <div class="links">
+      <a
+        [ngClass]="{ active: activeTab === 'Invoicing' }"
+        (click)="activeTab = 'Invoicing'"
+        >Invoicing</a
+      >
+      <a
+        [ngClass]="{ active: activeTab === 'Expenses' }"
+        (click)="activeTab = 'Expenses'"
+        >Expenses</a
+      >
+      <a
+        [ngClass]="{ active: activeTab === 'Reports' }"
+        (click)="activeTab = 'Reports'"
+        >Reports</a
+      >
     </div>
-    <!-- expenses -->
-    <div *ngIf="activeTab === 'Expenses'" class="tabs">
-      <div class="business-text">
-        <h2>Never lose another receipt</h2>
-        <p>We'll keep a photo record of every receipt, so you're organised and ready for tax time.</p>
-      </div>
-      <div class="business-image">
-        <img src="../../assets/sbseg-en-row-main-oa-global-feature-expenses-v2.jpg" alt="business">
-      </div>
-    </div>
-    <!-- reports -->
-    <div *ngIf="activeTab === 'Reports'" class="tabs">
-      <div class="business-text">
-        <h2>Run a report in seconds</h2>
-        <p>See how your business is doing with a range of popular reports. Or customise one to include details that matter to you.</p>
-      </div>
-      <div class="business-image">
-        <img src="../../assets/sbseg-en-row-main-oa-global-feature-reports.jpg" alt="business">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- run your business end -->
-
-<!-- plan start -->
-<div class="plan">
-  <div class="pricing">
-    <div class="plan-text">
-      <h2>Choose a plan that works for your business</h2>
-    </div>
-    <div class="payment-plan">
-      <a [ngClass]="{ 'active': activeTab === 'Monthly' }" (click)="activeTab = 'Monthly'">Monthly</a>
-      <i class="fa-solid fa-toggle-on"></i>
-      <a [ngClass]="{ 'active': activeTab === 'Annual' }" (click)="activeTab = 'Annual'">Annual</a>
-  
-    </div>
-    <!-- monthly -->
-    <div class="monthly">
-      <!-- simple busines -->
-      <div class="plan-cards">
-        <h3>Simple Start </h3>
-        <p class="title">Start your business</p>
-        <span>US$17</span>
-        <span>US$5</span>
-        <P>Save 70% for 3 months</P>
-        <div class="pay-btn">
-          <button class="green">Buy now</button>
-          <button class="white">Start a 30-day free trial</button>
+    <hr />
+    <div class="tab-content">
+      <!-- invoicing -->
+      <div *ngIf="activeTab === 'Invoicing'" class="tabs">
+        <div class="business-text">
+          <h2>Send invoices on-the-go</h2>
+          <p>
+            Manage your business on-the-go with the QuickBooks mobile app.
+            Create and send custom online invoices anytime, anywhere, from any
+            device.
+          </p>
         </div>
-        <ul>
-          <li>Track income & expenses</li>
-          <li>Send custom invoices & quotes</li>
-          <li>Connect your bank</li>
-          <li>Track GST and VAT</li>
-          <li>Insights & reports</li>
-          <li>Capture & organise receipts</li>
-          <li>Progress invoicing</li>
-          <li>For one user, plus your accountant</li>
-        </ul>
-        
-  
-      </div>
-<!-- Essentials  -->
-      <div class="plan-cards">
-        <h3>Essentials  </h3>
-        <p class="title">Run your business</p>
-        <span>US$26</span>
-        <span>US$7</span>
-        <P>Save 70% for 3 months</P>
-        <div class="pay-btn">
-          <button class="green">Buy now</button>
-          <button class="white">Start a 30-day free trial</button>
+        <div class="business-image">
+          <img src="../../assets/circlelady.jpg" alt="business" />
         </div>
-        <ul>
-          <li>Track income & expenses</li>
-          <li>Send custom invoices & quotes</li>
-          <li>Connect your bank</li>
-          <li>Track GST and VAT</li>
-          <li>Insights & reports</li>
-          <li>Capture & organise receipts</li>
-          <li>Progress invoicing</li>
-          <div class="premium">
+      </div>
+      <!-- expenses -->
+      <div *ngIf="activeTab === 'Expenses'" class="tabs">
+        <div class="business-text">
+          <h2>Never lose another receipt</h2>
+          <p>
+            We'll keep a photo record of every receipt, so you're organised and
+            ready for tax time.
+          </p>
+        </div>
+        <div class="business-image">
+          <img
+            src="../../assets/sbseg-en-row-main-oa-global-feature-expenses-v2.jpg"
+            alt="business"
+          />
+        </div>
+      </div>
+      <!-- reports -->
+      <div *ngIf="activeTab === 'Reports'" class="tabs">
+        <div class="business-text">
+          <h2>Run a report in seconds</h2>
+          <p>
+            See how your business is doing with a range of popular reports. Or
+            customise one to include details that matter to you.
+          </p>
+        </div>
+        <div class="business-image">
+          <img
+            src="../../assets/sbseg-en-row-main-oa-global-feature-reports.jpg"
+            alt="business"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- run your business end -->
+
+  <!-- plan start -->
+  <div class="plan">
+    <div class="pricing">
+      <div class="plan-text">
+        <h2>Choose a plan that works for your business</h2>
+      </div>
+      <div class="payment-plan">
+        <a
+          [ngClass]="{ active: activeTab === 'Monthly' }"
+          (click)="activeTab = 'Monthly'"
+          >Monthly</a
+        >
+        <i class="fa-solid fa-toggle-on"></i>
+        <a
+          [ngClass]="{ active: activeTab === 'Annual' }"
+          (click)="activeTab = 'Annual'"
+          >Annual</a
+        >
+      </div>
+      <!-- monthly -->
+      <div class="monthly">
+        <!-- simple busines -->
+        <div class="plan-cards">
+          <h3>Simple Start</h3>
+          <p class="title">Start your business</p>
+          <span>US$17</span>
+          <span>US$5</span>
+          <P>Save 70% for 3 months</P>
+          <div class="pay-btn">
+            <button class="green">Buy now</button>
+            <button class="white">Start a 30-day free trial</button>
+          </div>
+          <ul>
+            <li>Track income & expenses</li>
+            <li>Send custom invoices & quotes</li>
+            <li>Connect your bank</li>
+            <li>Track GST and VAT</li>
+            <li>Insights & reports</li>
+            <li>Capture & organise receipts</li>
+            <li>Progress invoicing</li>
+            <li>For one user, plus your accountant</li>
+          </ul>
+        </div>
+        <!-- Essentials  -->
+        <div class="plan-cards">
+          <h3>Essentials</h3>
+          <p class="title">Run your business</p>
+          <span>US$26</span>
+          <span>US$7</span>
+          <P>Save 70% for 3 months</P>
+          <div class="pay-btn">
+            <button class="green">Buy now</button>
+            <button class="white">Start a 30-day free trial</button>
+          </div>
+          <ul>
+            <li>Track income & expenses</li>
+            <li>Send custom invoices & quotes</li>
+            <li>Connect your bank</li>
+            <li>Track GST and VAT</li>
+            <li>Insights & reports</li>
+            <li>Capture & organise receipts</li>
+            <li>Progress invoicing</li>
+            <div class="premium">
+              <li>Manage bills & payments</li>
+              <li>Track employee time</li>
+              <li>Multi-currency</li>
+              <li>For three user, plus your accountant</li>
+            </div>
+          </ul>
+        </div>
+        <!-- plus -->
+        <div class="plan-cards">
+          <h3>Plus</h3>
+          <p class="title">Grow your business</p>
+          <span>US$36</span>
+          <span>US$10</span>
+          <P>Save 70% for 3 months</P>
+          <div class="pay-btn">
+            <button class="green">Buy now</button>
+            <button class="white">Start a 30-day free trial</button>
+          </div>
+          <ul>
+            <li>Track income & expenses</li>
+            <li>Send custom invoices & quotes</li>
+            <li>Connect your bank</li>
+            <li>Track GST and VAT</li>
+            <li>Insights & reports</li>
+            <li>Capture & organise receipts</li>
+            <li>Progress invoicing</li>
             <li>Manage bills & payments</li>
             <li>Track employee time</li>
             <li>Multi-currency</li>
-            <li>For three user, plus your accountant</li>
-          </div>
-        </ul>
-        
-  
-      </div>
-      <!-- plus -->
-      <div class="plan-cards">
-        <h3>Plus </h3>
-        <p class="title">Grow your business</p>
-        <span>US$36</span>
-        <span>US$10</span>
-        <P>Save 70% for 3 months</P>
-        <div class="pay-btn">
-          <button class="green">Buy now</button>
-          <button class="white">Start a 30-day free trial</button>
+            <div class="premium">
+              <li>Recurring transactions and bills</li>
+              <li>Track inventory</li>
+              <li>Track project profitability</li>
+              <li>Manage budgets</li>
+              <li>For five users, plus your accountant</li>
+            </div>
+          </ul>
         </div>
-        <ul>
-          <li>Track income & expenses</li>
-          <li>Send custom invoices & quotes</li>
-          <li>Connect your bank</li>
-          <li>Track GST and VAT</li>
-          <li>Insights & reports</li>
-          <li>Capture & organise receipts</li>
-          <li>Progress invoicing</li>
-          <li>Manage bills & payments</li>
-          <li>Track employee time</li>
-          <li>Multi-currency</li>
-          <div class="premium">
-            <li>Recurring transactions and bills</li>
-            <li>Track inventory</li>
-            <li>Track project profitability</li>
-            <li>Manage budgets</li>
-            <li>For five users, plus your accountant</li>
-          </div>
-        </ul>
+      </div>
+    </div>
+
+    <div class="plan-link">
+      <a>Important offers, pricing details & disclaimers</a>
+    </div>
+    <div class="feature-btn">
+      <button class="features">See all Features</button>
+    </div>
+  </div>
+  <!-- plan finish -->
+
+  <!-- tesmonials start -->
+  <div class="tesmonials">
+    <div class="tesmonials-text">
+      <h2>What our users are saying</h2>
+    </div>
+    <div class="tesmonials-cards">
+      <div class="imgs">
+        <div class="svgcircle" style="fill: #ff8000">
+          <svg width="307" height="512" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6.74609" cy="236" r="300"></circle>
+          </svg>
+        </div>
+
+        <div class="test-img">
+          <img src="../../assets/businessman-2.avif" alt="test" />
+        </div>
+      </div>
+      <div class="testmonial-message">
+        <p>
+          Before QuickBooks I dreaded the accounting side of my business. Now I
+          can get everything done in minutes and spend time doing what I love.
+        </p>
+        <p id="customer">Ash Read, Full time self-employed</p>
       </div>
     </div>
   </div>
- 
-  <div class="plan-link">
-    <a>Important offers, pricing details & disclaimers</a>
-  </div>
-  <div class="feature-btn">
-    <button class="features">See all Features</button>
-  </div>
+  <!-- tesmonials end -->
 
-</div>
-<!-- plan finish -->
-
-<!-- tesmonials start -->
-<div class="tesmonials">
-  <div class="tesmonials-text">
-    <h2>What our users are saying</h2>
-  </div>
-  <div class="tesmonials-cards">
-    <div class="imgs">
-      <div class="svgcircle" style="fill: #ff8000;">
-        <svg  width="307" height="512"  xmlns="http://www.w3.org/2000/svg" > 
-          <circle cx="6.74609" cy="236" r="300"></circle>
-    
-        </svg>
-      </div>
-      
-      
-      <div class="test-img">
-        <img src="../../assets/businessman-2.avif" alt="test">
-      </div>
+  <!-- what quickbooks can do start -->
+  <div class="million" id="cando">
+    <div class="million-text">
+      See what QuickBooks can do for your business.
     </div>
-    <div class="testmonial-message">
-      <p>Before QuickBooks I dreaded the accounting side of my business. Now I can get everything done in minutes and spend time doing what I love.</p>
-      <p id="customer">Ash Read, Full time self-employed</p>
+    <div class="btn-million">
+      <button class="grey">Buy now & save 70%</button>
+      <button class="white">Start a 30-day free trial</button>
     </div>
-   
-  </div>
-    
-</div>
-<!-- tesmonials end -->
 
-<!-- what quickbooks can do start -->
-<div class="million" id="cando">
-  <div class="million-text">
-    See what QuickBooks can do for your business.
+    <div class="beam-container">
+      <div class="beam" id="beam1"></div>
+      <div class="beam" id="beam2"></div>
+      <div class="beam" id="beam3"></div>
+    </div>
   </div>
-  <div class="btn-million">
-    <button class="grey">Buy now & save 70%</button>
-    <button class="white">Start a 30-day free trial</button>
-  </div>
-
-  <div class="beam-container">
-    <div class="beam" id="beam1"></div>
-    <div class="beam" id="beam2"></div>
-    <div class="beam " id="beam3"></div>
-  </div>
-  
-</div>
-<!-- what quickbooks can do end -->
+  <!-- what quickbooks can do end -->
   <!-- footer -->
   <footer>
-    <nav>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </nav>
-    <p>&copy; 2023 QuickBooks. All rights reserved.</p>
+    <div class="logo">
+      <div class="intuit">
+        <img
+          src="https://digitalasset.intuit.com/content/dam/intuit/ic/en_us/logos/gwp-footer/intuit-rebrand-logo.svg"
+          alt="intuit"
+          loading="lazy"
+          width="164"
+          height="37"
+        />
+      </div>
+      <div class="logos">
+        <div class="quickbooks">
+          <img
+            src="https://digitalasset.intuit.com/content/dam/intuit/ic/en_us/logos/gwp-footer/qb-logo.svg"
+            alt="QuickBooks"
+            loading="lazy"
+            width="107"
+            height="20"
+          />
+        </div>
+        <div class="turbo">
+          <img
+            src="https://digitalasset.intuit.com/content/dam/intuit/ic/en_us/logos/gwp-footer/tt-logo-white.svg"
+            alt="TurboTax"
+            loading="lazy"
+            width="90"
+            height="19"
+          />
+        </div>
+        <div class="proconnect">
+          <img
+            src="https://digitalasset.intuit.com/content/dam/intuit/ic/en_us/logos/gwp-footer/proconnect-logo.svg"
+            alt="ProConnect"
+            loading="lazy"
+            width="114"
+            height="20"
+          />
+        </div>
+        <div class="mint">
+          <img
+            src="https://digitalasset.intuit.com/content/dam/intuit/ic/en_us/logos/gwp-footer/mint-logo.svg"
+            alt="Mint"
+            loading="lazy"
+            width="57"
+            height="20"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <div class="copyright">
+        <p>&copy; 2022 Intuit Limited.</p>
+        <p>
+          All rights reserved. Terms and conditions, features, support, pricing,
+          and service options subject to change without notice.
+        </p>
+        <a class="terms">Offer Terms and Conditions</a>
+      </div>
+      <div class="legal">
+        <p>Legal | Privacy | Security</p>
+        <img src="../../assets/seal.svg" alt="seal" width="142" height="45">
+      </div>
+    </div>
+
   </footer>
   <!-- end footer -->
 </div>
- 
-  
-
-
-
