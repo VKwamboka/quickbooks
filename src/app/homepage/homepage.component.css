@@ -164,7 +164,7 @@ nav a:hover {
   display: flex;
   gap: 2rem;
 }
-.hero-btn,.btn-million button {
+.hero-btn,.btn-million button, .features {
   border-radius: 2rem;
   border: none;
   padding: 0.8rem;
@@ -179,11 +179,11 @@ nav a:hover {
   background-color: #0e8900;
   color: #fff;
 }
-.hero-btn .grey {
+.hero-btn .grey, .features {
   background-color: #393a3d;
   color: #fff;
 }
-.hero-btn .grey:hover {
+.hero-btn .grey:hover,.features:hover {
   background-color: black;
 }
 .hero-btn .green:hover {
@@ -221,8 +221,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   align-items: center;
   gap: 3rem;
+  overflow: hidden;
   /* position: relative; */
 }
 .million-text {
@@ -248,7 +250,9 @@ color: #fff;
   position: absolute;
   right: 33rem;
   transform: scale(1);
+  position: absolute;
   mix-blend-mode: multiply;
+  /* overflow: hidden; */
 }
 
 .beam {
@@ -271,12 +275,14 @@ color: #fff;
   top: 8.4rem;
   width: 26rem;
   transition-delay: .3s;
+  overflow: hidden;
 }
 #beam2{
   background: linear-gradient(225.74deg,#b9bdc4,#d3d6db);
   left: -4.14rem; 
   top:4.5rem;
   height: 8.0625rem;
+  overflow: hidden;
 }
 #beam3{
   height: 4.0625rem;
@@ -287,6 +293,7 @@ background-color: #eceef1;
 border-top-right-radius: 0;
 border-top-left-radius: 0;
 transition-delay: .2s;
+overflow: hidden;
 }
 /* million end */
 
@@ -320,7 +327,7 @@ hr{
   border: 1px solid #ebedef;
 
 }
-.run-business,.plan-text h2{
+.run-business,.plan-text,.tesmonials-text h2{
   text-align: center;
   color: #393a3d;
   font-weight: 600;
@@ -352,6 +359,55 @@ hr{
   width: 50%;
 }
 /* run buiness end */
+
+/* testmonials start */
+.tesmonials{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.tesmonials-cards{
+ box-shadow: 0 .9375rem 1.875rem rgba(0,0,0,.15);
+  border-radius:1rem;
+  margin: 4rem 8rem 8rem;
+}
+.test-img {
+/* left: 50%; */
+transform: translateX(-45%);
+top : 0;
+width: auto;
+}
+.test-img img{
+  height: 52%;
+width: auto;
+margin-top: 7rem;
+border-radius: 50%;
+}
+.imgs{
+  display: flex;
+  width: 40%;
+}
+.imgs circle svg{
+  fill: #ff8000;
+}
+.testmonial-message{
+  width:40%;
+
+}
+.testmonial-message p{
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 34px;
+}
+#customer{
+  font-size: 20px;
+  font-weight: 500;
+  /* margin-top: 1rem; */
+}
+.tesmonials-cards{
+  display: flex;
+  gap: 6rem;
+}
+/* testmonials end */
 
 /* plan start */
 .plan{
@@ -428,18 +484,35 @@ color: #0e8900;
   font-size: .875rem;
 font-weight: 500;
 color: #0077c5;
-text-align: center;
 background-color: transparent;
-margin-left: auto;
-/* width: 100%; */
-/* padding: 0 0 1.25rem; */
 }
+.plan-link{
+text-align: center;
+padding: 0 0 1.25rem;
+}
+.features{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.feature-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 /* plan end */
+
+/* what quickbooks cando start */
+#cando{
+  /* margin-top: 4rem; */
+}
+/* what quickbooks can do end */
 
 
 /* footer */
 footer {
-  margin-top: 300px;
+  
   background-color: #333;
   color: #fff;
   padding: 20px;
