@@ -101,7 +101,6 @@ form h2 {
 .options p{
     cursor: pointer;
     font-weight: 600;
-    color: 393a3d;
-    /* border-bottom: 4px solid var(--cgds-tabs-main-underline-38aca0); */
-padding-bottom: 6px;
+    color: #393a3d;
+    padding-bottom: 6px;
 }
