@@ -60,7 +60,7 @@
   </div>
 
   <div class="form">
-    <form>
+    <form  [formGroup]="form">
       <h2>Sign in</h2>
       <p class="intuit-account">
         Use your <span> Intuit Account</span> to sign in to QuickBooks.
@@ -85,6 +85,26 @@
         <p>Email or User ID</p>
         <p>Phone</p>
       </div>
+
+      <div class="form-group">
+       
+        <input type="email" class="form-control" formControlName="Email" placeholder="Email or User ID"
+        [class.is-invalid]="form.controls['Email'].invalid && (form.controls['Email'].dirty || form.controls['Email'].touched)"
+        />
+        <!-- <div *ngIf="form.controls['Email'].invalid && (form.controls['Email'].dirty || form.controls['Email'].touched)" class="alert">
+          <div *ngIf="form.get('Email')!.errors!['required']" >Please provide an Email</div>
+          <div *ngIf="form.get('Email')!.errors!['email']" >Email must be a valid email</div>
+        </div> -->
+      </div>
+      <label id="checked">
+        <input class="check" type="checkbox" checked="checked" name="remember"/> 
+        <p>Remember me</p>
+      </label>
+
+      <button [disabled]="!form.valid">Sign In</button>
+
+      <p class="condition">By selecting Sign In or Sign in with Google, you agree to our <span style="color:#0077c5">Terms</span> and have read and acknowledge our <span style="color:#0077c5">Global Privacy Statement</span>.</p>
+     <hr >
     </form>
   </div>
 </div>

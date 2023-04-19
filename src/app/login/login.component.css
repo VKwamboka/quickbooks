@@ -73,34 +73,96 @@ form h2 {
   align-items: center;
 }
 .line {
-    flex: 1;
-    height: 1px;
-    background-color: rgb(186, 190, 197);
-  }
-  
-  .text {
-    padding: 0 10px;
-    font-weight: bold;
-  }
-  .error-message{
-    font-size: 14px;
-    text-align: left;
-    display: flex;
-    gap: 1rem;
-    border: 1px solid #0077c5;
-    border-radius: 4px;
-    padding: 16px;
-  }
-  .options{
-    margin-top: 2rem;
-    display: flex;
-    gap: 6rem;
-    justify-content: center;
-    align-items: center;
-  }
-.options p{
-    cursor: pointer;
-    font-weight: 600;
-    color: #393a3d;
-    padding-bottom: 6px;
+  flex: 1;
+  height: 1px;
+  background-color: rgb(186, 190, 197);
+}
+
+.text {
+  padding: 0 10px;
+  font-weight: bold;
+}
+.error-message {
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #0077c5;
+  border-radius: 4px;
+  padding: 16px;
+}
+.options {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+.options p {
+  cursor: pointer;
+  font-weight: 600;
+  color: #393a3d;
+  padding-bottom: 6px;
+}
+.alert {
+  color: red;
+}
+input.form-control {
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+.is-invalid {
+  background-color: #f8d7da;
+  border: 1px solid red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+#checked {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 20px;
+  margin: 1rem 0;
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  color: #393a3d;
+}
+#checked input {
+  font-size: 16px;
+  border: 1px solid #2ca01c;
+  background-color: #2ca01c;
+}
+form button {
+  height: 44px;
+  background-color: #2ca01c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+}
+form button:hover {
+  background-color: #2f8724;
+}
+.condition {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(107, 108, 114);
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
 }
